@@ -450,6 +450,17 @@ alias asm_sources
      <address-model>32
      <architecture>x86
      <binary-format>elf
+     <toolset>qcc
+   ;
+
+alias asm_sources
+   : asm/make_i386_sysv_elf_gas.S
+     asm/jump_i386_sysv_elf_gas.S
+     asm/ontop_i386_sysv_elf_gas.S
+   : <abi>sysv
+     <address-model>32
+     <architecture>x86
+     <binary-format>elf
      <toolset>clang
    ;
 
@@ -561,6 +572,17 @@ alias asm_sources
 
 # X86_64
 # X86_64/SYSV/ELF
+alias asm_sources
+   : asm/make_x86_64_sysv_elf_gas.S
+     asm/jump_x86_64_sysv_elf_gas.S
+     asm/ontop_x86_64_sysv_elf_gas.S
+   : <abi>sysv
+     <address-model>64
+     <architecture>x86
+     <binary-format>elf
+     <toolset>qcc
+   ;
+
 alias asm_sources
    : asm/make_x86_64_sysv_elf_gas.S
      asm/jump_x86_64_sysv_elf_gas.S
